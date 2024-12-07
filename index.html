@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/pokemon-anime.gif">
-    <title>vhs</title>
+    <title>SPKIDE</title>
 </head>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
@@ -14,6 +14,7 @@
         *::after{
             box-sizing: border-box;
             margin: 0;
+            padding: 0;
         }
         body{
             background-color: black;
@@ -44,7 +45,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.5rem 1rem;
+            padding: 0.5rem 10rem;
         }
 
         .pokemon {
@@ -111,43 +112,67 @@
             align-items: center;
             padding: 0.5em;
         }
-        @media only screen and (max-width:320px){
-            nav {
+
+        .titulo-3{
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
-            padding: 0.5rem 1rem;
+            margin: 15em 0.5em;
+            margin-right: 60em;
         }
-            .logo {
-                font-size: 1.5rem;
-                color: white;
+
+        .titulo-3 h1{
+            display: flex;
+            flex-direction: column;
+            font-size: 60px;
         }
-        .computadora{
-            width: 100%;
+
+        .titulo-3 span{
+            margin-left: 60px;
         }
+        @media only screen and (max-width:320px){
         }
 
         @media only screen and (max-width:304px){
-            nav{
-                display:flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                padding: 0.5rem 1rem;
-            }
+        }
 
-            ul{
-                display: none;
-            }
-
-            li{
-                display: none;
-            }
-
-            .logo{
+        @media  only screen  and (max-width:756px){
+            .titulo-3{
                 display: flex;
-                margin-right: 70%;
-                margin-top: -75%;
+                justify-content: center;
+                align-content: center;
+               float: left;
+               margin-top: 10em;
+               margin-left: 2.0em;
+            }
+
+            .titulo-3 h1{
+                font-size: 2.1em;
+                display: flex;
+            }
+
+            .titulo-3 span{
+                display: flex;
+                justify-items: center;
+                margin-top: -1.2em;
+            }
+
+            .pokemon{
+                width: 85px;
+                margin-left: 1em;
+            }
+
+            nav{
+                display: none;
+            }
+
+            .gengar-2{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                margin-left: 10em;
+                border-radius: none;
+                margin-top: -5em;
             }
         }
 
@@ -161,52 +186,49 @@
         }
 
         @media only screen  and (max-width:756px) {
-            .poke{
-                margin-top: 150px;
-                display: flex;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
-            .gengar{
-                width: 100px;
-                display: block;
-            }
-
-            .titulo-2{
-                display: flex;
-                justify-content: center;
-                margin-top: 140px;
-            }
         }
     </style>
 <body>
     <div class="container">
-        <div class="content">
-            <div>
-                <nav>
-                    <img src="img/7e3b67c53469cc4302035be70a7f2d60.gif" alt="" class="pokemon">
-                    <ul class="nav-links">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Información</a></li>
-                        <li><a href="#">Saber más</a></li>
-                        <li><a href="#">Datos</a></li>
-                        <li><a href="#">Contáctanos</a></li>
-                        <li><a href="#">Sobre mí</a></li>
-                    </ul>
-                </nav>                        
-                <img src="img/background3.gif" alt="bienvenido" class="fondo-1">
+        <div>
+            <img src="img/7e3b67c53469cc4302035be70a7f2d60.gif" alt="" class="pokemon">
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="http://127.0.0.1:5500/index.html#">Inicio</a></li>
+                    <li><a href="#Sobre-Mi">Sobre Mi</a></li>
+                    <li><a href="#Proyectos">Proyectos</a></li>
+                    <li><a href="#Contactame">Contactame</a></li>
+                    <li><a href="#Clientes">Clientes</a></li>
+                </ul>
+            </nav>                        
+        </div>
+        <section>
+            <div class="titulo-3">
+                <h1>BIENVENIDO A MI <span style="color: purple;">PORTAFOLIO</span></h1>
+                <img src="img/pokemon-gengar.gif" alt="" class="gengar-2">
             </div>
+        </section>
+        <div class="content">
         </div>
         <div class="fuzzy-overlay"></div>
-        <section>
-            <div>
-                <h2 class="titulo-2">BIENVENIDO A SPKIDE</h2>
-                <div class="poke">
-                    <img src="img/pokemon-anime.gif" alt="prueba" class="prueba">
-                    <img src="img/7fd35eac56fc6a8586298a6ed2ce9e85.gif" alt="prueba" class="prueba-2">
-                    <img src="img/6700a5c64d66f46ff71111d4a700b2ff.gif" alt="prueba" class="prueba-3">
-                </div>
+        <section id="Sobre-Mi">
+            <div class="Sobre">
+                <h2>Sobre mi</h2>
+            </div>
+        </section>
+        <section id="Proyectos">
+            <div class="container-1">
+                <h2>Proyectos</h2>
+            </div>
+        </section>
+        <section id="Contactame">
+            <div class="Contactame">
+                <h2>Contactame</h2>
+            </div>
+        </section>
+        <section id="Clientes">
+            <div class="Clientes">
+                <h2>Clientes</h2>
             </div>
         </section>
     </div>
